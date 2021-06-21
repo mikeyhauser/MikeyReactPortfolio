@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/mikeyhauser/MikeyReactPortfolio/static/css/main.f0ff03bc.chunk.css",
+    "main.js": "/mikeyhauser/MikeyReactPortfolio/static/js/main.20d82f60.chunk.js",
+    "main.js.map": "/mikeyhauser/MikeyReactPortfolio/static/js/main.20d82f60.chunk.js.map",
+    "runtime-main.js": "/mikeyhauser/MikeyReactPortfolio/static/js/runtime-main.218b3821.js",
+    "runtime-main.js.map": "/mikeyhauser/MikeyReactPortfolio/static/js/runtime-main.218b3821.js.map",
+    "static/js/2.7d8bed48.chunk.js": "/mikeyhauser/MikeyReactPortfolio/static/js/2.7d8bed48.chunk.js",
+    "static/js/2.7d8bed48.chunk.js.map": "/mikeyhauser/MikeyReactPortfolio/static/js/2.7d8bed48.chunk.js.map",
+    "index.html": "/mikeyhauser/MikeyReactPortfolio/index.html",
+    "static/css/main.f0ff03bc.chunk.css.map": "/mikeyhauser/MikeyReactPortfolio/static/css/main.f0ff03bc.chunk.css.map",
+    "static/js/2.7d8bed48.chunk.js.LICENSE.txt": "/mikeyhauser/MikeyReactPortfolio/static/js/2.7d8bed48.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.218b3821.js",
+    "static/js/2.7d8bed48.chunk.js",
+    "static/css/main.f0ff03bc.chunk.css",
+    "static/js/main.20d82f60.chunk.js"
+  ]
+}
