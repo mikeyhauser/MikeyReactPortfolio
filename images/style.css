@@ -1,0 +1,160 @@
+
+/* body font is set to arial */
+
+body {
+  font-family: Arial;
+  background-color: rgb(120, 121, 116);
+  margin: 0;
+}
+.btn {
+  background-color:  rgb(240, 226, 206) !important;
+  
+  }
+
+/* sets the style for the header with the jpg in the background, cover size shifts it slightly when changing the size of the page.  */
+header {
+  background-image: url("con tree4.jpg");
+  background-size: cover;
+  color: rgb(249, 250, 238);
+  text-align: left;   
+  border: 2px solid rgb(249, 250, 238);
+  border-bottom-right-radius: 25px;
+  height: 600px;
+}
+/* here i made some linear gradients that fade to clear */
+h1{
+   color: rgb(249, 250, 238);
+   background-image: linear-gradient(to right, rgba(227, 215, 189, 0.7), rgba(255,0,0,.05));
+   
+}
+h5{
+ 
+  background-image: linear-gradient(to right, rgba(172, 184, 140, 0.4), rgba(255,0,0,.05));
+  
+}
+
+/* the nav bar gradients are set similar to the h1. flex is set so it can adjust to changing screen sizes */
+nav {
+  display: flex ;
+  
+  background-image: linear-gradient(to right, rgba(211, 208, 201, 0.4), rgba(255,0,0,.05));
+}
+
+nav a {
+  color: #D3D0C9;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*  sets the flex priority and color for the aside*/
+
+aside {
+  flex: 1;
+  background-color:  rgb(184, 184, 184) !important;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+
+}
+/* this sets the section style flex  priority*/
+section {
+  flex: 3;
+  /* background-color: #fff; */
+  padding: 20px;
+  
+}
+
+/* here i defined the mikey picture and set the jpg in the style */
+#mikey {
+  background-image: url("con tree4.jpg");
+  
+  background-position-x: center;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 300px;
+  padding: 2px;
+  border: 3px solid rgba(115, 96, 131, 0.4);
+  background-color:rgba(115, 96, 131, 0.4);
+  border-radius: 25px;
+
+
+}
+
+
+/* here the flex container is defined for the pictures. space between sets the spacing between the pictures and not on the sides */
+.flex-container {
+
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+
+}
+
+/* the transition is set at 500 ms and ease in so the reaction for the image growth isnt so abrupt */
+/* .coding img { */
+  /* background-image: url("html.jpg"); */
+  /* height: 150px;
+  width: 150px;
+  transition: all 500ms ease-in;
+} */
+/* the hover feature causes the images to jump out if the user wants a closer look */
+/* .coding img:hover { */
+  /* position: static; top: ; left: 0; right: 0; bottom: 0;
+  transform: scale(4.25); */
+  
+  /* background-image: url("html.jpg");  */
+  /* background-repeat: no-repeat; */
+  /* background-position:  center;  */
+  /* background-size: cover; */
+
+/* } */
+/* woodmetal style is set for the pictures in woodworking */
+.woodMetal img {
+
+  height: 150px;
+  width: 150px;
+}
+
+footer {
+  flex-shrink: 0;
+  padding: 20px;
+  text-align: center;
+  background: rgba(115, 96, 131, 0.4);
+  color: #fff;
+}
+
+
+/* max-width is < px */
+@media only screen and (max-width: 770px) {
+  /* Use flex-direction to stack the navbar, sidebar, and body */
+
+  nav {
+    flex-direction: column;
+    display: flex !important;
+  }
+
+  /* class = .     id = #       element = element */
+  .row {
+    display: block !important;
+  }
+  /* Make the sidebar stack below the body */
+ aside {
+    display:inline-block;
+    height: 400px;
+    margin-bottom: 150px !important;
+  }
+  
+  /* Change the header background */
+  /* Change the navbar and footer background */
+  /* nav,
+  footer {
+    background-color:rgba(115, 96, 131, 0.4);
+  } */
+}
