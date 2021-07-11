@@ -1,0 +1,54 @@
+{"portfolio":{
+    "projects": [
+      {
+        "title":"Pick Your Poison",
+        "category":"API Calling and Processing",
+        "image":"pickThumb.jpg",
+        "deployedSite": "https://joeltbenson.github.io/PickYourPoison/",
+        "gitHubRepo": ""
+      },
+      {
+        "title":"Work Day Planner",
+        "category":"MomentJS and Local Storage",
+        "image":"workDayThumb.jpg",
+        "deployedSite": "https://mikeyhauser.github.io/HW5workday/",
+        "gitHubRepo": "https://github.com/mikeyhauser/HW5workday"
+      },
+      {
+        "title":"Employee Management",
+        "category":"MySql Database Construction",
+        "image":"MySqlThumb.png",
+        "deployedSite": "https://mikeyhauser.github.io/HW5workday/",
+        "gitHubRepo": "https://github.com/mikeyhauser/HW12mysql",
+        "videoDemonstration": "https://drive.google.com/file/d/1nW62Tu2S_RInYUMsfuBNPu_eCflagcg2/view"
+      },
+      {
+        "title":"Tech Blog/Forum",
+        "category":"Express Routing and Heroku Deploy",
+        "image":"MySqlThumb.png",
+        "deployedSite": "https://mikeyforum.herokuapp.com/login",
+        "gitHubRepo": "https://github.com/mikeyhauser/HW14mcv"
+     
+      },
+
+      {
+        "title":"Note Taker",
+        "category":"Express Routing and Heroku Deploy",
+        "image":"MySqlThumb.png",
+        "deployedSite": "https://hw11express.herokuapp.com/notes",
+        "gitHubRepo": "https://github.com/mikeyhauser/HW11express"
+      },
+
+      {
+        "title":"Commerce DataBase",
+        "category":"Express Routing and Heroku Deploy",
+        "image":"MySqlThumb.png",
+        "deployedSite": "https://drive.google.com/file/d/1ebKk-n9dwL2_Qko_nD6u42f7Q8KSGtXP/view",
+        "gitHubRepo": "https://github.com/mikeyhauser/HW13object-relational-mapping"
+      }
+     
+
+      
+    ]
+  }
+}
