@@ -414,7 +414,7 @@ ul#nav li.current a { color: #fe6928; }
 /* ------------------------------------------------------------------ */
 
 #portfolio {
-   background: #ebeeee;
+   background: #1d1d1d;
    padding-top: 90px;
    padding-bottom: 60px;
 }
@@ -424,7 +424,7 @@ ul#nav li.current a { color: #fe6928; }
    letter-spacing: 1px;
    text-align: center;
    margin-bottom: 48px;
-   color: #95A3A3;
+   color: #202020;
 }
 
 /* Portfolio Content */

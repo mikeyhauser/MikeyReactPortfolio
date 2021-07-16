@@ -45,10 +45,11 @@ class App extends Component {
       <div className="App">
         <Header data={this.state.projectsData.main} />
         <About data={this.state.projectsData.main} />
-        <Resume data={this.state.projectsData.resume} />
         <Portfolio data={this.state.projectsData.portfolio} />
+        <Resume data={this.state.projectsData.resume} />
         <Contact data={this.state.projectsData.main} />
         <Footer data={this.state.projectsData.main} />
+        
       </div>
     );
   }

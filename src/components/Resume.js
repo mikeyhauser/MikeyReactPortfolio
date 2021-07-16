@@ -1,109 +1,57 @@
-import React, { Component } from "react";
-import Slide from "react-reveal";
+import React, { useState } from "react";
+import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
 
-class Resume extends Component {
-  getRandomColor() {
-    let letters = "0123456789ABCDEF";
-    let color = "#";
-    for (let i = 0; i < 6; i++) {
-      color += letters[Math.floor(Math.random() * 16)];
-    }
-    return color;
+
+
+export default function Resume() {
+  const [numPages, setNumPages] = useState(null);
+  const [pageNumber, setPageNumber] = useState(1);
+
+  function onDocumentLoadSuccess({ numPages }) {
+    setNumPages(numPages);
+    setPageNumber(1);
   }
 
-  render() {
-    if (!this.props.data) return null;
-
-    const skillmessage = this.props.data.skillmessage;
-    const education = this.props.data.education.map(function (education) {
-      return (
-        <div key={education.school}>
-          <h3>{education.school}</h3>
-          <p className="info">
-            {education.degree} <span>&bull;</span>
-            <em className="date">{education.graduated}</em>
-          </p>
-          <p>{education.description}</p>
-        </div>
-      );
-    });
-
-    const work = this.props.data.work.map(function (work) {
-      return (
-        <div key={work.company}>
-          <h3>{work.company}</h3>
-          <p className="info">
-            {work.title}
-            <span>&bull;</span> <em className="date">{work.years}</em>
-          </p>
-          <p>{work.description}</p>
-        </div>
-      );
-    });
-
-    const skills = this.props.data.skills.map((skills) => {
-      const backgroundColor = this.getRandomColor();
-      const className = "bar-expand " + skills.name.toLowerCase();
-      const width = skills.level;
-
-      return (
-        <li key={skills.name}>
-          <span style={{ width, backgroundColor }} className={className}></span>
-          <em>{skills.name}</em>
-        </li>
-      );
-    });
-
-    return (
-      <section id="resume">
-        <Slide left duration={1300}>
-          <div className="row education">
-            <div className="three columns header-col">
-              <h1>
-                <span>Education</span>
-              </h1>
-            </div>
-
-            <div className="nine columns main-col">
-              <div className="row item">
-                <div className="twelve columns">{education}</div>
-              </div>
-            </div>
-          </div>
-        </Slide>
-
-        <Slide left duration={1300}>
-          <div className="row work">
-            <div className="three columns header-col">
-              <h1>
-                <span>Work</span>
-              </h1>
-            </div>
-
-            <div className="nine columns main-col">{work}</div>
-          </div>
-        </Slide>
-
-        <Slide left duration={1300}>
-          <div className="row skill">
-            <div className="three columns header-col">
-              <h1>
-                <span>Skills</span>
-              </h1>
-            </div>
-
-            <div className="nine columns main-col">
-              <p>{skillmessage}</p>
-
-              <div className="bars">
-                <ul className="skills">{skills}</ul>
-              </div>
-            </div>
-          </div>
-        </Slide>
-      </section>
-    );
+  function changePage(offset) {
+    setPageNumber(prevPageNumber => prevPageNumber + offset);
   }
+
+  function previousPage() {
+    changePage(-1);
+  }
+
+  function nextPage() {
+    changePage(1);
+  }
+
+  return (
+    < div id="MHresume">
+   <div>
+        <p>
+          Page {pageNumber || (numPages ? 1 : '--')} of {numPages || '--'}
+        </p>
+        <button
+          type="button"
+          disabled={pageNumber <= 1}
+          onClick={previousPage}
+        >
+          Previous
+        </button>
+        <button
+          type="button"
+          disabled={pageNumber >= numPages}
+          onClick={nextPage}
+        >
+          Next
+        </button>
+      </div>
+      <Document 
+        file="./images/MHweb.pdf"
+        onLoadSuccess={onDocumentLoadSuccess}
+      >
+        <Page pageNumber={pageNumber} />
+      </Document>
+      
+    </div>
+  );
 }
-
-export default Resume;

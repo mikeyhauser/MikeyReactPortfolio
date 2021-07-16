@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Zmage from "react-zmage";
-import Fade from "react-reveal";
 
 let id = 0;
 class Portfolio extends Component {
@@ -27,7 +26,7 @@ class Portfolio extends Component {
        
           <div className="row">
             <div className="twelve columns collapsed">
-              <h1>Check Out Some of My Works.</h1>
+              <h3 style={{ color: "white", textAlign: "center" }}>Projects from 2021:</h3>
 
               <div 
                 id="portfolio-wrapper"
