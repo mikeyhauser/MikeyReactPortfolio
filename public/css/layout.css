@@ -1,3 +1,104 @@
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+   border-radius: 10px;
+   background-color: transparent;
+   width: 200px;
+   height: 400px;
+   perspective: 1000px; /* Remove this if you don't want the 3D effect */
+ }
+ 
+ /* This container is needed to position the front and back side */
+ .flip-card-inner {
+    
+   position: relative;
+   width: 100%;
+   height: 100%;
+   text-align: center;
+   transition: transform 0.8s;
+   transform-style: preserve-3d;
+ }
+ 
+ /* Do an horizontal flip when you move the mouse over the flip box container */
+ .flip-card:hover .flip-card-inner {
+   transform: rotateY(180deg);
+ }
+ 
+ /* Position the front and back side */
+ .flip-card-front, .flip-card-back {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   -webkit-backface-visibility: hidden; /* Safari */
+   backface-visibility: hidden;
+ }
+ 
+ /* Style the front side (fallback if image is missing) */
+ .flip-card-front {
+   border-radius: 10px;
+   border-style: solid;
+   border-width: 5px;
+   border-color: #302f2f;
+   background-color: black;
+   color: black;
+ }
+ 
+ 
+ /* Style the back side */
+ .flip-card-back {
+   border-style: solid;
+   border-width: 5px;
+   border-color: #302f2f;
+   background-color: #bbb;
+   border-radius: 10px;
+   color: black;
+   transform: rotateY(180deg);
+ }
+ .flip-card-back p{
+z-index: 1;
+font-weight: 900; }
+
+ 
+ .flip-card-front h4{
+    text-align: center;
+  font: 20px 'opensans-bold', sans-serif;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+   color: rgba(177, 108, 131, 0.8);
+}
+
+
+.flip-card-front h5{
+   writing-mode: vertical-lr;
+   text-orientation: sideways;
+   font-weight: lighter;
+   word-spacing: 5px;
+   z-index: 99;
+
+
+   text-align: left;
+ font: 10px 'opensans-bold', sans-serif;
+ width: 100%;
+ /* text-transform: uppercase; */
+ letter-spacing: 2.5px;
+ color: #bbb;
+}
+ 
+ .flip-card-back a{
+    margin: 20px;
+   font: 14px 'opensans-bold', sans-serif;
+   width: 100%;
+   text-transform: uppercase;
+   letter-spacing: 2.5px;
+    color: rgba(177, 108, 131, 0.8);
+ }
+ .flip-card-back p
+ {
+    margin: 20px;
+ }
+ 
+
+
 /*
 =====================================================================
 *   Ceevee v1.0 Layout Stylesheet
@@ -56,19 +157,30 @@ header .banner {
 header .banner-text { width: 100%; }
 header .banner-text h1 {
    font: 90px/1.1em 'opensans-bold', sans-serif;
-   color: #fff;
+   color: rgb(224, 223, 223);
+   border-radius: 30px;
    letter-spacing: -2px;
    margin: 0 auto 18px auto;
+   -webkit-text-stroke-width: 1.5px;
+   -webkit-text-stroke-color: rgb(114, 114, 114);
 }
 header .banner-text h3 {
-   font: 25px/1.9em 'librebaskerville-heavy', serif;
-   color: #ddd;
+  
+
+   /* font: 20px/1.1em 'opensans-bold', sans-serif; */
+
+   font: 27px/1.5em 'librebaskerville-heavy', serif;
+   color: rgb(233, 233, 233);
+   background-color: rgba(177, 108, 131, 0.8);
+   border-radius: 50px;
    margin: 0 auto;
    width: 70%;
+
+
 }
 header .banner-text h3 span,
 header .banner-text h3 a {
-   color: #fff;
+   color: rgb(255, 255, 255);
 }
 header .banner-text hr {
    width: 60%;
@@ -116,6 +228,8 @@ header .scrolldown a:hover { color: #0762f9; }
 /* primary navigation
 --------------------------------------------------------------------- */
 #nav-wrap ul, #nav-wrap li, #nav-wrap a {
+   z-index: 1;
+
 	 margin: 0;
 	 padding: 0;
 	 border: none;
@@ -124,16 +238,21 @@ header .scrolldown a:hover { color: #0762f9; }
 
 /* nav-wrap */
 #nav-wrap {
+   
    font: 12px 'opensans-bold', sans-serif;
    width: 100%;
    text-transform: uppercase;
    letter-spacing: 2.5px;
    margin: 0 auto;
-   z-index: 100;
+   z-index: 999;
    position: fixed;
    left: 0;
    top: 0;
 }
+
+
+
+
 .opaque { background-color: #333; }
 
 /* hide toggle button */
@@ -147,7 +266,7 @@ ul#nav {
    text-align: center;
 }
 ul#nav li {
-   position: relative;
+   /* position: relative; */
    list-style: none;
    height: 48px;
    display: inline-block;
@@ -239,7 +358,7 @@ ul#nav li.current a { color: #fe6928; }
    overflow: hidden;
 }
 
-#resume a, #resume a:visited  { color: #0762f9; }
+#resume a, #resume a:visited  { color: rgba(177, 108, 131, 0.8); }
 #resume a:hover, #resume a:focus { color: #313131; }
 
 #resume h1 {
@@ -424,15 +543,18 @@ ul#nav li.current a { color: #fe6928; }
    letter-spacing: 1px;
    text-align: center;
    margin-bottom: 48px;
-   color: #202020;
+   color: #1d1d1d;
 }
 
 /* Portfolio Content */
 #portfolio-wrapper .columns { margin-bottom: 36px; }
-.portfolio-item .item-wrap {
+/* .portfolio-item .item-wrap {
+   border-radius: 10px;
+   min-height: 400px;
+
    background: #fff;
    overflow: hidden;
-   position: relative;
+  
 
    -webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
@@ -443,16 +565,17 @@ ul#nav li.current a { color: #fe6928; }
 .portfolio-item .item-wrap a {
    display: block;
    cursor: pointer;
-}
+   position: relative;
+   
+} */
 
 /* overlay */
-.portfolio-item .item-wrap .overlay {
+/* .portfolio-item .item-wrap .overlay {
    position: absolute;
    left: 0;
    top: 0;
    width: 100%;
    height: 100%;
-
 	opacity: 0;
 	-moz-opacity: 0;
 	filter:alpha(opacity=0);
@@ -463,8 +586,8 @@ ul#nav li.current a { color: #fe6928; }
 	transition: opacity 0.3s ease-in-out;
 
    background: url(../images/overlay-bg.png) repeat;
-}
-.portfolio-item .item-wrap .link-icon {
+} */
+/* .portfolio-item .item-wrap .link-icon {
    display: block;
    color: #fff;
    height: 30px;
@@ -472,6 +595,7 @@ ul#nav li.current a { color: #fe6928; }
    font-size: 18px;
    line-height: 30px;
    text-align: center;
+   flex-direction: column-reverse;
 
    opacity: 0;
 	-moz-opacity: 0;
@@ -490,8 +614,8 @@ ul#nav li.current a { color: #fe6928; }
 }
 .portfolio-item .item-wrap img {
    vertical-align: bottom;
-}
-.portfolio-item .portfolio-item-meta { padding: 18px }
+} */
+/* .portfolio-item .portfolio-item-meta { padding: 18px }
 .portfolio-item .portfolio-item-meta h5 {
    font: 14px/21px 'opensans-bold', sans-serif;
    color: #fff;
@@ -503,16 +627,16 @@ ul#nav li.current a { color: #fe6928; }
 }
 
 /* on hover */
-.portfolio-item:hover .overlay {
+/* .portfolio-item:hover .overlay {
 	opacity: 1;
 	-moz-opacity: 1;
 	filter:alpha(opacity=100);
-}
-.portfolio-item:hover .link-icon {
+}  */
+/* .portfolio-item:hover .link-icon {
    opacity: 1;
 	-moz-opacity: 1;
 	filter:alpha(opacity=100);
-}
+} */
 
 /* popup modal */
 .popup-modal {
@@ -752,7 +876,6 @@ call-to-action .button {
 /* Control Nav */
 .flex-control-nav {
     width: 100%;
-    position: absolute;
     bottom: -20px;
     text-align: left;
 }
@@ -798,7 +921,7 @@ call-to-action .button {
 }
 #contact .section-head { margin-bottom: 42px; }
 
-#contact a, #contact a:visited  { color: #0762f9; }
+#contact a, #contact a:visited  { color: rgba(177, 108, 131, 0.8); }
 #contact a:hover, #contact a:focus { color: #fff; }
 
 #contact h1 {
@@ -936,7 +1059,7 @@ footer {
    position: relative;
 }
 
-footer a, footer a:visited { color: #525252; }
+footer a, footer a:visited { color: rgba(177, 108, 131, 0.8); }
 footer a:hover, footer a:focus { color: #fff; }
 
 /* copyright */

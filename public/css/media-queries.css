@@ -42,6 +42,8 @@
    }
    /* nav-wrap */
    #nav-wrap {
+      z-index: 1;
+
       font: 11px 'opensans-bold', sans-serif;
       letter-spacing: 1.5px;
    }
@@ -100,6 +102,7 @@
    /* mobile navigation
    -------------------------------------------------------------------- */
    #nav-wrap {
+      z-index: 1;
       font: 12px 'opensans-bold', sans-serif;
       background: transparent !important;
       letter-spacing: 1.5px;  
@@ -109,6 +112,8 @@
       right: 0;
    }
    #nav-wrap > a {
+      z-index: 1;
+
 	   width: 48px;
 		height: 48px;
 		text-align: left;
@@ -128,6 +133,7 @@
 
 	#nav-wrap > a:before,
    #nav-wrap > a:after {
+      
 	   position: absolute;
 		border: 2px solid #fff;
 		top: 35%;
@@ -254,7 +260,11 @@
 
    /* Portfolio Section
    /* ----------------------------------------------------------------- */
-   #portfolio-wrapper .columns { margin-bottom: 40px; }
+   #portfolio-wrapper .columns 
+   
+   {      border-radius: 10px;
+
+       margin-bottom: 40px; }
    .popup-modal {	max-width: 85%; }
 
 

@@ -11,7 +11,7 @@ class Footer extends Component {
             <div className="twelve columns">
               <ul className="mikeySocial">
                 <li key="linkedin">
-                  <a href="https://www.linkedin.com/in/tim-baker-8420009a/">
+                  <a href="https://www.linkedin.com/in/mikey-hauser-3109099/">
                     <i className="fa fa-linkedin"></i>
                   </a>
                 </li>

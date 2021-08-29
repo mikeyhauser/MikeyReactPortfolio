@@ -70,8 +70,12 @@ class Header extends Component {
   width: 200
 }} />
 
+
+
         <nav id="nav-wrap">
-          
+        <div>
+
+</div>
           <ul id="nav" className="nav">
             <li className="current">
               <a className="smoothscroll" href="#home">
@@ -86,7 +90,7 @@ class Header extends Component {
             </li>
 
             <li>
-              <a className="smoothscroll" href="#MHresume">
+              <a className="smoothscroll" href="#resume">
                 Resume
               </a>
             </li>
@@ -97,11 +101,7 @@ class Header extends Component {
               </a>
             </li>
 
-            <li>
-              <a className="smoothscroll" href="#contact">
-                Contact
-              </a>
-            </li>
+       
           </ul>
           
         </nav>
@@ -111,12 +111,13 @@ class Header extends Component {
               <h1 className="responsive-headline">Mikey Hauser</h1>
             </Fade>
             <Fade bottom duration={1800}>
-              <h3>Fullstack Web Developer and ASE Master Mechanic</h3>
+              <h3>Full Stack Web Developer and ASE Master Mechanic</h3>
             </Fade>
             <hr />
           
           </div>
         </div>
+        
         
 
         <p className="scrolldown">
@@ -124,6 +125,7 @@ class Header extends Component {
             <i className="icon-down-circle"></i>
           </a>
         </p>
+        
         
       </header>
     );

@@ -1,51 +1,173 @@
-{"portfolio":{
+{"resume":{
+  "education":[
+    {
+      "school":"University Of North Carolina",
+      "degree":"Full Stack Coding Bootcamp",
+      "graduated":"JUL 2021",
+      "description":"Learned Full Stack Web Development by studying, writing, and troubleshooting code. Completed 3 team projects and learned how to effectively coordinate my coding remotely with others through the use of Git Repo's. Every week of the boot camp required me to produce a new application that utilized industry technologies. As a student, I learned how to code both the front-end and back-end of web applications"
+    },
+    {
+      "school":"Durham Tech Community College",
+      "degree":"Associates in Science",
+      "graduated":"APR 2020",
+      "description":"Strong focus on math (CALC 3), physics (PHY 2), and Javascript."
+    },
+    {
+      "school":"Academy of Information Technologies",
+      "degree":"Certificate of Completion",
+
+      "graduated": "high school program",
+      "description":"Learned the basics of web design, networking, C++ and Javascript. The academy placed me at an internship with KONTEK Systems where I installed network systems for Universities, Hospitals, and Libraries."
+    }
+  ],
+  "work":[
+    {
+      "company":"Kamehameha Schools Transportation Department",
+      "title":"Fleet Mechanic",
+      "years":"JAN 2013 - JUL 2019",
+      "description":"Maintained a fleet of 30 buses and 150 automobiles. Repairs were done in the field (where breakdowns occured) in order to make sure the students safely arrived to their destinations. This environment required consistent critical thinking under pressure. I had to make timely repair decisions, order my own parts, and coordinate when to bring buses out of service to perform repairs."
+    },
+    {
+      "company":"Mellott Contractors",
+      "title":"Fleet Mechanic",
+      "years":"AUG 2019 - Present",
+      "description":"I manage a fleet of commercial trucks and heavy equipment (excavators, dozers, and thinkgs of that sort.) I Coordinate closely with another mechanic to complete the maximum amount of repairs on the fleet. Communication and teamwork has been a great success in this position."
+    }
+  ],
+  "skills":[
+    {
+      "name":"Javascript",
+      "level":"90%"
+    },
+    {
+      "name":"Node.js",
+      "level":"87%"
+    },
+    {
+      "name":"MongoDB",
+      "level":"80%"
+    },
+    {
+      "name":"GraphQL",
+      "level":"85%"
+    },
+    {
+      "name":"MySQL",
+      "level":"70%"
+    },
+    {
+      "name":"RESTful API",
+      "level":"85%"
+    },
+    {
+      "name":"MERN Stack",
+      "level":"55%"
+    },
+    {
+      "name":"React",
+      "level":"50%"
+    },
+    
+    {
+      "name":"Heroku/ Atlas/ Cloud Tech",
+      "level":"60%"
+    },
+    {
+      "name":"GitHub Management",
+      "level":"60%"
+    },
+    {
+      "name":"HTML",
+      "level":"65%"
+    }
+
+  ]
+},
+  
+  "portfolio":{
     "projects": [
      
       {
-        "title":"Note Taker",
-        "category":"Express Routing and Heroku Deploy",
-        "image":"noteTaker.png",
-        "deployedSite": "https://hw11express.herokuapp.com/notes",
-        "gitHubRepo": "https://github.com/mikeyhauser/HW11express"
-      },
-      {
-        "title":"Work Day Planner",
-        "category":"MomentJS and Local Storage",
-        "image":"workdayThumb.jpg",
-        "deployedSite": "https://mikeyhauser.github.io/HW5workday/",
-        "gitHubRepo": "https://github.com/mikeyhauser/HW5workday"
-      },
-      {
-        "title":"Employee Management",
-        "category":"MySql Database Construction",
-        "image":"terminalCommerce.png",
-        "deployedSite": "https://drive.google.com/file/d/1nW62Tu2S_RInYUMsfuBNPu_eCflagcg2/view",
-        "gitHubRepo": "https://github.com/mikeyhauser/HW12mysql"
+        "title":"Bus Tracker",
+        "category":"Mongo DB------------ GraphQL--------------- React-------------------",
+        "description": "This program uses MongoDB and GraphQL to track a fleet of school buses, student pickups, and bus breakdowns.",
+        "image":"newM33.png",
+        "deployedSite": "https://drive.google.com/file/d/1MjOT1fbb02LbHbOt0c5wOo8qksCoW-yt/view",
+        "gitHubRepo": "https://github.com/mikeyhauser/Bus-Tracker#readme",
+        "demo": "https://drive.google.com/file/d/1MjOT1fbb02LbHbOt0c5wOo8qksCoW-yt/view"
       },
       {
         "title":"Pick Your Poison",
-        "category":"API Calling and Processing",
-        "image":"pickThumb.jpg",
-        "deployedSite": "https://joeltbenson.github.io/PickYourPoison/",
-        "gitHubRepo": ""
+        "category":"API Parsing-------- Javascript-----------",
+        "description": "The idea of Pick Your Poison is simple - to provide a quick drink recommendation and recipe based on your local weather.",
+        "image":"newM3.png",
+        "deployedSite": "https://mikeyhauser.github.io/Pick-Your-Poison/",
+        "gitHubRepo": "https://github.com/mikeyhauser/Pick-Your-Poison#readme"
       },
       {
-        "title":"Tech Blog/Forum",
-        "category":"Express Routing and Heroku Deploy",
-        "image":"techBlog.png",
-        "deployedSite": "https://mikeyforum.herokuapp.com/",
-        "gitHubRepo": "https://github.com/mikeyhauser/HW14mcv"
+        "title":"Tech Blog",
+        "category":"MVC------------------- RESTful CRUD------- Handlbars-------------",
+        "description": "The Tech Blog uses a RESTful CRUD to manage a public forum. It allows users to sign-up/login. It uses an MVC format via Handlebars.",
+        
+        "image":"newM16.png",
+        "deployedSite": "https://mikeyforum.herokuapp.com/login",
+        "gitHubRepo": "https://github.com/mikeyhauser/Tech-Blog#readme"
      
       },
+      {
+        "title":"Commerce DataBase",
+        "category":"MySQL-------------- Sequelize----------- Insomnia------------",
+        "description": "This project replicates an Internet Retailer (such as ebay.) I built the back end that uses Express.js API to use Sequelize. It interacts with a MySQL database.",
+        "image":"newM20.png",
+        "deployedSite": "https://drive.google.com/file/d/1ebKk-n9dwL2_Qko_nD6u42f7Q8KSGtXP/view",
+        "gitHubRepo": "https://github.com/mikeyhauser/Commerce-DataBase#readme"
+      },
+      {
+        "title":"Employee Management",
+        "category":"MySQL Database-- Schemas-------------",
+        
+        "description": "This project uses MySQL to manage a database of employees, managers, and departments.",
+        "image":"newM31.png",
+        "deployedSite": "https://drive.google.com/file/d/1nW62Tu2S_RInYUMsfuBNPu_eCflagcg2/view",
+        "gitHubRepo": "https://github.com/mikeyhauser/MySQL#readme"
+      },
+
+      {
+        "title":"Workday Planner",
+        "category":"MomentJS---------- Local Storage-----",
+        "description": "Uses MomentJS and Local Storage to create a daily planner. Timeblocks change color in relation to the hours of the workday.",
+
+        "image":"newM27.png",
+        "deployedSite": "https://mikeyhauser.github.io/Workday-Planner/",
+        "gitHubRepo": "https://github.com/mikeyhauser/Workday-Planner#readme"
+      },
+      {
+        "title":"Coding Quiz",
+        "category":"Game Logic--------- Dynamic Elements- Javascript-------------",
+
+        "description": "This is a fun and simple quiz that uses Javascript to ask multiple choice questions about coding. It uses simple logic to interact with the user.",
+
+        "image":"newM8.png",
+        "deployedSite": "https://mikeyhauser.github.io/Coding-Quiz/",
+        "gitHubRepo": "https://github.com/mikeyhauser/Coding-Quiz#readme"
+      },
+
+    
+     
+ 
+    
 
       
 
+    
       {
-        "title":"Commerce DataBase",
-        "category":"Express Routing and Heroku Deploy",
-        "image":"insomniaCommerce.png",
-        "deployedSite": "https://drive.google.com/file/d/1ebKk-n9dwL2_Qko_nD6u42f7Q8KSGtXP/view",
-        "gitHubRepo": "https://github.com/mikeyhauser/HW13object-relational-mapping"
+        "title":"Note Taker",
+        "category":"Javascript  Heroku  db.JSON",
+        "description": "A user can create, save, and delete notes. The application uses a JSON file to save the user's notes.",
+
+        "image":"newM2.png",
+        "deployedSite": "https://hw11express.herokuapp.com/notes",
+        "gitHubRepo": "https://github.com/mikeyhauser/Note-Taker#readme "
       }
      
 

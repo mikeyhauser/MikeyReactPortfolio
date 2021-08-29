@@ -10,32 +10,74 @@ class Portfolio extends Component {
       let projectImage = "images/projectThumbs/" + projects.image;
 
       return (
-        <div key={id++} className="columns portfolio-item">
-          <div className="item-wrap">
-            <Zmage alt={projects.title} src={projectImage} />
-            <h2 style={{ textAlign: "center" }}>{projects.title}</h2>
-            <a style={{ textAlign: "center" }} href={projects.deployedSite}  >Deployed Site</a>
-            <a style={{ textAlign: "center" }} href={projects.gitHubRepo} >Repository </a>
+
+        <div class="rows">
+          <h1>Stagger Effect On The Cards</h1>
+        <div key={id++} class="columns flip-card">
+          <div class="flip-card-inner">
+            <div style={{ backgroundImage: '(${projectImage})' }} 
+            
+            class="flip-card-front">
+              <h4 style={{ backgroundColor: "black" }} >{projects.title}</h4>
+              <Zmage style={{width: "170px", height: "150px"}} alt={projects.title} src={projectImage} />
+              <div style={{height: "150px"}} class="columns">
+              <h5>{projects.category}</h5>
+            
+              </div>
+            </div>
+            <div class="flip-card-back">
+              <p>{projects.title}</p>
+              <div style={{ backgroundColor: "black" }} >
+                <a href={projects.deployedSite}  >:Demonstration:</a>
+              </div>
+              <div style={{ backgroundColor: "black" }} >
+                <a href={projects.gitHubRepo} >:Readme / Code:</a>
+              </div>
+              <p>{projects.description}</p>
+              
+            
+                 </div>
           </div>
         </div>
+
+
+        </div>
+
+
+        /*           
+                  <div className="item-wrap">
+                    <h2 style={{ textAlign: "center" }}>{projects.title}</h2>
+        
+                    <p>{projects.description}</p>
+                    <a style={{ textAlign: "center",
+                    flexDirection: "column-reverse"
+                  }} href={projects.deployedSite}  >Deployed Site</a>
+                    <a style={{ textAlign: "center" }} href={projects.gitHubRepo} >Repository </a>
+                    
+                  </div> */
+
+
+
       );
     });
 
     return (
       <section id="portfolio">
-       
-          <div className="row">
-            <div className="twelve columns collapsed">
-              <h3 style={{ color: "white", textAlign: "center" }}>Projects from 2021:</h3>
 
-              <div 
-                id="portfolio-wrapper"
-                className="bgrid-quarters s-bgrid-thirds cf"
-              >
-                {projects}
-              </div>
+        <div className="row">
+          <div className="twelve columns collapsed">
+
+          <h2 style={{ color: "white", textAlign: "center" }}>My Projects From 2021:</h2>
+            <p style={{ color: "gray", textAlign: "center" }}>(Bus Tracker uses a free cloud database and will take 10 seconds to load)</p>
+
+            <div
+              id="portfolio-wrapper"
+              className="bgrid-quarters s-bgrid-thirds cf"
+            >
+              {projects}
             </div>
           </div>
+        </div>
       </section>
     );
   }
