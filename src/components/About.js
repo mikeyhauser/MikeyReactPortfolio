@@ -6,7 +6,7 @@ class About extends Component {
 
     const aboutName = "Mikey Hauser";
     const aboutPicture = "images/mikeyMountains.jpg";
-    const aboutBio1 =  "For over a decade I have served as an ASE Master Mechanic, earning all ASE certificates in automotive repair and commercial vehicle repair. During that period I have completed the UNC Coding Bootcamp, and an Associates Degree in Science.";
+    const aboutBio1 =  "For over a decade I have served as an ASE Master Mechanic, earning all ASE certificates in automotive repair and commercial vehicle repair. During that period I have completed the UNC Coding Bootcamp, and two years towards a Computer Science Degree.";
     const aboutBio2 = "My ambition is to find myself in the convergence of these two industries; both automotive mechanics and computer programming."
 
     

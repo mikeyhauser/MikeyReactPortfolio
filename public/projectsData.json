@@ -3,20 +3,20 @@
     {
       "school":"University Of North Carolina",
       "degree":"Full Stack Coding Bootcamp",
-      "graduated":"JUL 2021",
+      "graduated":"Graduated: JUL 2021",
       "description":"Learned Full Stack Web Development by studying, writing, and troubleshooting code. Completed 3 team projects and learned how to effectively coordinate my coding remotely with others through the use of Git Repo's. Every week of the boot camp required me to produce a new application that utilized industry technologies. As a student, I learned how to code both the front-end and back-end of web applications"
     },
     {
       "school":"Durham Tech Community College",
-      "degree":"Associates in Science",
-      "graduated":"APR 2020",
+      "degree":"Computer Science",
+      "graduated":"In Process",
       "description":"Strong focus on math (CALC 3), physics (PHY 2), and Javascript."
     },
     {
       "school":"Academy of Information Technologies",
       "degree":"Certificate of Completion",
 
-      "graduated": "high school program",
+      "graduated": "High School Program",
       "description":"Learned the basics of web design, networking, C++ and Javascript. The academy placed me at an internship with KONTEK Systems where I installed network systems for Universities, Hospitals, and Libraries."
     }
   ],
@@ -162,7 +162,7 @@
     
       {
         "title":"Note Taker",
-        "category":"Javascript  Heroku  db.JSON",
+        "category":"Javascript-----------  Heroku----------------  db.JSON----------------",
         "description": "A user can create, save, and delete notes. The application uses a JSON file to save the user's notes.",
 
         "image":"newM2.png",
