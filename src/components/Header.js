@@ -35,7 +35,7 @@ class Header extends Component {
       <header id="home" 
       style={{ 
         height: "600px",
-        backgroundImage: "url(/images/tree5.png)",
+        backgroundImage: "url(/images/tree4.jpg)",
         backgroundSize: "cover",
         opacity: "0.99",
         zIndex: "9999"
