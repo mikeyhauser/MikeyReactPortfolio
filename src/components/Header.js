@@ -37,7 +37,8 @@ class Header extends Component {
         height: "600px",
         backgroundImage: "url(/images/tree5.png)",
         backgroundSize: "cover",
-        opacity: "0.99"
+        opacity: "0.99",
+        zIndex: "9999"
     }}>
         
 
