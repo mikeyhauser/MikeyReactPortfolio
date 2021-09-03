@@ -366,8 +366,15 @@ ul#nav li.current a { color: #fe6928; }
    color: #0D0D0D;
  }
 
-#resume a, #resume a:visited  { color: rgba(177, 108, 131, 0.8); }
+ #resume a:visited  { color: rgba(177, 108, 131, 0.8); }
 #resume a:hover, #resume a:focus { color: #313131; }
+#resume a{
+   font: 15px 'opensans-bold', sans-serif;
+   width: 100%;
+   text-transform: uppercase;
+   letter-spacing: 2.5px;
+    color: rgba(177, 108, 131, 0.8);
+}
 
 #resume h1 {
    font: 18px/24px 'opensans-bold', sans-serif;
