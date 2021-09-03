@@ -9,7 +9,7 @@ class About extends Component {
     const aboutBio1 =  "For over a decade I have served as an ASE Master Mechanic, earning all ASE certificates in automotive repair and commercial vehicle repair. During that period I have completed the UNC Coding Bootcamp and two years towards a Computer Science Degree.";
     const aboutBio2 = "My ambition is to find myself in the convergence of these two industries; both automotive mechanics and computer programming."
 
-    
+
     const aboutCity = "Chapel Hill";
     const aboutState = "North Carolina";
     const phone = "919-259-2629";
@@ -37,12 +37,12 @@ class About extends Component {
 </h2>
               <ol>
                 <li>Be a perpetual learner of new things</li>
-                <li>Break complicated diagnostics into simpler, easily confirmed tests.</li>
-                <li>Break long projects up into smaller, easily accomplished tasks and celebrate success.</li>
-                <li>Prioritize listening: Attempt to understand other perspectives before expressing my own.</li>
-                <li>By focusing on honest communication, people can accomplish great things together.</li>
-                <li>Positive attitudes resonate and amplify through a project.</li>
-                <li>Practice makes perfect: time and commitment bring the impossible goals within reach.</li>
+                <li>Break complicated diagnostics into simpler, easily confirmed tests</li>
+                <li>Break long projects up into smaller, easily accomplished tasks and celebrate success</li>
+                <li>Prioritize listening: Attempt to understand other perspectives before expressing my own</li>
+                <li>By focusing on honest communication, people can accomplish great things together</li>
+                <li>Positive attitudes resonate and amplify through a project</li>
+                <li>Practice makes perfect: time and commitment bring the impossible goals within reach</li>
               
 
               </ol>

@@ -4,7 +4,7 @@
       "school":"University Of North Carolina",
       "degree":"Full Stack Coding Bootcamp",
       "graduated":"Graduated: JUL 2021",
-      "description":"Learned Full Stack Web Development by studying, writing, and troubleshooting code. Completed 3 team projects and learned how to effectively coordinate my coding remotely with others through the use of Git Repo's. Every week of the boot camp required me to produce a new application that utilized industry technologies. As a student, I learned how to code both the front-end and back-end of web applications"
+      "description":"Learned Full Stack Web Development by studying, writing, and troubleshooting code. Completed 3 team projects and learned how to effectively coordinate my coding remotely with others through the use of Git Repo's. Every week of the boot camp required me to produce a new application that utilized industry technologies. As a student, I learned how to code both the front-end and back-end of web applications."
     },
     {
       "school":"Durham Tech Community College",
@@ -32,6 +32,12 @@
       "title":"Fleet Mechanic",
       "years":"AUG 2019 - Present",
       "description":"I manage a fleet of commercial trucks and heavy equipment (excavators, dozers, and things of that sort.) I Coordinate closely with another mechanic to complete the maximum amount of repairs on the fleet. Communication and teamwork has been a great success in this position."
+    },
+    {
+      "company":"Americorps: Habitat for Humanity and Residential Services Inc",
+      "title":"Community Organizer and Social Worker",
+      "years":"2007 - 2009",
+      "description":"Managed a variety of philanthropic projects for non-profit businesses including Habitat for Humanity, Public Allies of North Carolina, and Residential Services Inc. Practiced community organizing, team leadership, and asset based community development. At Habitat for Humanity, our goal was to provide low income housing. At RSI, our goal was to provide living options and related supports to people with intellectual and developmental disabilities."
     }
   ],
   "skills":[
@@ -105,24 +111,6 @@
         "gitHubRepo": "https://github.com/mikeyhauser/Pick-Your-Poison#readme"
       },
       {
-        "title":"Tech Blog",
-        "category":"MVC------------------- RESTful CRUD------- Handlbars-------------",
-        "description": "The Tech Blog uses a RESTful CRUD to manage a public forum. It allows users to sign-up/login. It uses an MVC format via Handlebars.",
-        
-        "image":"newM16.png",
-        "deployedSite": "https://mikeyforum.herokuapp.com/login",
-        "gitHubRepo": "https://github.com/mikeyhauser/Tech-Blog#readme"
-     
-      },
-      {
-        "title":"Commerce DataBase",
-        "category":"MySQL-------------- Sequelize----------- Insomnia------------",
-        "description": "This project replicates an Internet Retailer (such as ebay.) I built the back end that uses Express.js API to use Sequelize. It interacts with a MySQL database.",
-        "image":"newM20.png",
-        "deployedSite": "https://drive.google.com/file/d/1ebKk-n9dwL2_Qko_nD6u42f7Q8KSGtXP/view",
-        "gitHubRepo": "https://github.com/mikeyhauser/Commerce-DataBase#readme"
-      },
-      {
         "title":"Employee Management",
         "category":"MySQL Database-- Schemas-------------",
         
@@ -131,7 +119,6 @@
         "deployedSite": "https://drive.google.com/file/d/1nW62Tu2S_RInYUMsfuBNPu_eCflagcg2/view",
         "gitHubRepo": "https://github.com/mikeyhauser/MySQL#readme"
       },
-
       {
         "title":"Workday Planner",
         "category":"MomentJS---------- Local Storage-----",
@@ -141,6 +128,29 @@
         "deployedSite": "https://mikeyhauser.github.io/Workday-Planner/",
         "gitHubRepo": "https://github.com/mikeyhauser/Workday-Planner#readme"
       },
+     
+
+      {
+        "title":"Commerce DataBase",
+        "category":"MySQL-------------- Sequelize----------- Insomnia------------",
+        "description": "This project replicates an Internet Retailer. I constructed a back end that uses Express.js API, Sequelize, and MySQL database.",
+        "image":"newM20.png",
+        "deployedSite": "https://drive.google.com/file/d/1ebKk-n9dwL2_Qko_nD6u42f7Q8KSGtXP/view",
+        "gitHubRepo": "https://github.com/mikeyhauser/Commerce-DataBase#readme"
+      },
+      
+
+      {
+        "title":"Tech Blog",
+        "category":"MVC------------------- RESTful CRUD------- Handlbars-------------",
+        "description": "The Tech Blog uses a RESTful CRUD to manage a public forum. It allows users to sign-up/login. It uses an MVC format via Handlebars.",
+        
+        "image":"newM16.png",
+        "deployedSite": "https://mikeyforum.herokuapp.com/login",
+        "gitHubRepo": "https://github.com/mikeyhauser/Tech-Blog#readme"
+     
+      },
+     
       {
         "title":"Coding Quiz",
         "category":"Game Logic--------- Dynamic Elements- Javascript-------------",

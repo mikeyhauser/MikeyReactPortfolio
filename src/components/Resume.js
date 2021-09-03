@@ -17,6 +17,8 @@ class Resume extends Component {
   
     const education = this.props.data.education.map(function (education) {
       return (
+        
+        
         <div key={education.school}>
           <h3>{education.school}</h3>
           <p className="info">
@@ -56,7 +58,11 @@ class Resume extends Component {
 
     return (
       <section id="resume">
+        
         <Fade duration={500}>
+        <div style={{textAlign: "center"}}>
+        <a href="https://mikeyhauser.github.io/Resume/" style={{textAlign: "center"}}>:LINK TO VIEW FULL RESUME:</a>
+        </div>  
           <div className="row education">
             <div className="three columns header-col">
               <h1>
