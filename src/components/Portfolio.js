@@ -69,7 +69,7 @@ class Portfolio extends Component {
           <div className="twelve columns collapsed">
 
           <h2 style={{ color: "white", textAlign: "center" }}>My Projects From 2021:</h2>
-            <p style={{ color: "gray", textAlign: "center" }}>(Bus Tracker uses a free cloud database and will take 10 seconds to load)</p>
+            {/* <p style={{ color: "gray", textAlign: "center" }}>(Bus Tracker uses a free cloud database and will take 10 seconds to load)</p> */}
 
             <div
               id="portfolio-wrapper"

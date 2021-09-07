@@ -56,7 +56,7 @@
  }
  .flip-card-back p{
 z-index: 1;
-font-weight: 900; }
+}
 
  
  .flip-card-front h4{
@@ -465,7 +465,7 @@ ul#nav li.current a { color: #fe6928; }
    padding-bottom: 60px;
 }
 #portfolio p {
-text-align: left;
+text-align: left !important;
 }
 #portfolio h6 {
    text-align: center;
