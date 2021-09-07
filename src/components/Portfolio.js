@@ -26,14 +26,15 @@ class Portfolio extends Component {
               </div>
             </div>
             <div class="flip-card-back">
-              <p>{projects.title}</p>
+              <h3 style={{font: "12px"}}>{projects.title}</h3>
               <div style={{ backgroundColor: "black" }} >
-                <a href={projects.deployedSite}  >:Demonstration:</a>
+                <a href={projects.deployedSite}  >:Link to Demo:</a>
               </div>
-              <div style={{ backgroundColor: "black" }} >
+              <h3>+</h3>
+              <div style={{backgroundColor: "black" }} >
                 <a href={projects.gitHubRepo} >:Readme / Code:</a>
               </div>
-              <p>{projects.description}</p>
+              <p >{projects.description}</p>
               
             
                  </div>
