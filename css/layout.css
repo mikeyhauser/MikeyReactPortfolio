@@ -483,12 +483,12 @@ text-align: left;
    color: #1d1d1d;
 }
 #portfolio h3 {
-   font: 10px 'opensans-semibold';
-   letter-spacing: 1px;
+   font: 10px 'opensans-semibold' !important;
+   letter-spacing: 1px !important;
    text-align: center;
    color: #1d1d1d;
-   padding: 0px;
-   margin-left: 0px;
+   padding: 0px !important;
+   margin-left: 0px !important;
 }
 
 
