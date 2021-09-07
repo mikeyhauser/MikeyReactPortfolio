@@ -2,7 +2,7 @@
   "education":[
     {
       "school":"University Of North Carolina",
-      "degree":"Full Stack Coding Bootcamp",
+      "degree":"Full Stack Coding Bootcamp: Certificate",
       "graduated":"Graduated: JUL 2021",
       "description":"Learned Full Stack Web Development by studying, writing, and troubleshooting code. Completed 3 team projects and learned how to effectively coordinate my coding remotely with others through the use of Git Repo's. Every week of the boot camp required me to produce a new application that utilized industry technologies. As a student, I learned how to code both the front-end and back-end of web applications."
     },
@@ -95,8 +95,8 @@
      
       {
         "title":"Bus Tracker",
-        "category":"Mongo DB------------ GraphQL--------------- React-------------------",
-        "description": "This program uses MongoDB and GraphQL to track a fleet of school buses, student pickups, and bus breakdowns.",
+        "category":"------------Mongo DB ---------------GraphQL -------------------React",
+        "description": "Tracks buses, students, and bus breakdowns. Alerts the user when there is any problem with student pickup.",
         "image":"newM33.png",
         "deployedSite": "https://drive.google.com/file/d/1MjOT1fbb02LbHbOt0c5wOo8qksCoW-yt/view",
         "gitHubRepo": "https://github.com/mikeyhauser/Bus-Tracker#readme",
@@ -104,25 +104,26 @@
       },
       {
         "title":"Pick Your Poison",
-        "category":"API Parsing-------- Javascript-----------",
+        "category":"--------API Parsing -----------Javascript",
         "description": "The idea of Pick Your Poison is simple - to provide a quick drink recommendation and recipe based on your local weather.",
         "image":"newM3.png",
         "deployedSite": "https://mikeyhauser.github.io/Pick-Your-Poison/",
         "gitHubRepo": "https://github.com/mikeyhauser/Pick-Your-Poison#readme"
       },
-      {
+       {
         "title":"Employee Management",
-        "category":"MySQL Database-- Schemas-------------",
+        "category":"----------------MySQL  ----------Inquirer.JS -------------Schemas",
         
-        "description": "This project uses MySQL to manage a database of employees, managers, and departments.",
+        "description": "Demonstrates how MySQL can manage a database of company employees, managers, and departments. SQL commands and seeds are in Develop/db.",
         "image":"newM31.png",
         "deployedSite": "https://drive.google.com/file/d/1nW62Tu2S_RInYUMsfuBNPu_eCflagcg2/view",
         "gitHubRepo": "https://github.com/mikeyhauser/MySQL#readme"
       },
+    
       {
         "title":"Workday Planner",
-        "category":"MomentJS---------- Local Storage-----",
-        "description": "Uses MomentJS and Local Storage to create a daily planner. Timeblocks change color in relation to the hours of the workday.",
+        "category":"------Local Storage ------------MomentJS ",
+        "description": "Implements MomentJS and Local Storage to create a daily planner. Timeblocks change color in relation to the hours of the workday.",
 
         "image":"newM27.png",
         "deployedSite": "https://mikeyhauser.github.io/Workday-Planner/",
@@ -132,17 +133,25 @@
 
       {
         "title":"Commerce DataBase",
-        "category":"MySQL-------------- Sequelize----------- Insomnia------------",
+        "category":"----------------MySQL ------------Sequelize ------------Insomnia",
         "description": "This project replicates an Internet Retailer. I constructed a back end that uses Express.js API, Sequelize, and MySQL database.",
         "image":"newM20.png",
         "deployedSite": "https://drive.google.com/file/d/1ebKk-n9dwL2_Qko_nD6u42f7Q8KSGtXP/view",
         "gitHubRepo": "https://github.com/mikeyhauser/Commerce-DataBase#readme"
       },
-      
+      {
+        "title":"API Weather",
+        "category":" ----Object Oriented -------------API Calls",
+        
+        "description": "API calls retrieve current weather conditions and a 6 day forecast. Javascript parses the object data for use",
+        "image":"newM31.png",
+        "deployedSite": "https://drive.google.com/file/d/1nW62Tu2S_RInYUMsfuBNPu_eCflagcg2/view",
+        "gitHubRepo": "https://github.com/mikeyhauser/MySQL#readme"
+      },
 
       {
         "title":"Tech Blog",
-        "category":"MVC------------------- RESTful CRUD------- Handlbars-------------",
+        "category":"--------------------MVC ----------------RESTful -------------Handlbars",
         "description": "The Tech Blog uses a RESTful CRUD to manage a public forum. It allows users to sign-up/login. It uses an MVC format via Handlebars.",
         
         "image":"newM16.png",
@@ -153,9 +162,9 @@
      
       {
         "title":"Coding Quiz",
-        "category":"Game Logic--------- Dynamic Elements- Javascript-------------",
+        "category":"----------Game Logic --Dynamic Elements -------------Javascript",
 
-        "description": "This is a fun and simple quiz that uses Javascript to ask multiple choice questions about coding. It uses simple logic to interact with the user.",
+        "description": "This is a fun and simple quiz that uses Javascript to ask multiple choice questions about coding. It records the users top score.",
 
         "image":"newM8.png",
         "deployedSite": "https://mikeyhauser.github.io/Coding-Quiz/",
@@ -172,7 +181,7 @@
     
       {
         "title":"Note Taker",
-        "category":"Javascript-----------  Heroku----------------  db.JSON----------------",
+        "category":"-----------Javascript  ----------------Heroku  ----------------db.JSON",
         "description": "A user can create, save, and delete notes. The application uses a JSON file to save the user's notes.",
 
         "image":"newM2.png",
