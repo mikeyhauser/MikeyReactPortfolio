@@ -61,7 +61,7 @@ class Resume extends Component {
         
         <Fade duration={500}>
         <div style={{textAlign: "center"}}>
-        <a href="https://mikeyhauser.github.io/Resume/" style={{textAlign: "center"}}>:LINK TO VIEW FULL RESUME:</a>
+        <a href="https://docs.google.com/document/d/1EkKw_3l2cFljQ72Bm4sfRIee5G0aYqxeMS88cG_P4D8/edit?usp=sharing" style={{textAlign: "center"}}>:LINK TO VIEW FULL RESUME:</a>
         </div>  
           <div className="row education">
             <div className="three columns header-col">
