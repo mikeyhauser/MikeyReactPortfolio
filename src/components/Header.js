@@ -91,16 +91,22 @@ class Header extends Component {
             </li>
 
             <li>
-              <a className="smoothscroll" href="#resume">
-                Resume
+              <a className="smoothscroll" href="#contactinfo">
+                Contact
               </a>
             </li>
-
             <li>
               <a className="smoothscroll" href="#portfolio">
                 Portfolio
               </a>
             </li>
+            <li>
+              <a className="smoothscroll" href="#resume">
+                Resume
+              </a>
+            </li>
+
+
 
        
           </ul>
@@ -114,7 +120,7 @@ class Header extends Component {
             <Fade bottom duration={1800}>
               <h3>Full Stack Web Developer and ASE Master Mechanic</h3>
             </Fade>
-            <hr />
+       
           
           </div>
         </div>

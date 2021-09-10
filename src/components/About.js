@@ -7,7 +7,7 @@ class About extends Component {
     const aboutName = "Mikey Hauser";
     const aboutPicture = "images/mikeyMountains.jpg";
     const aboutBio3 = "Web Developer leveraging 12 years as an ASE Master Mechanic to logically troubleshoot and diagnose computer code. Earned a certificate in Full Stack Web Development from the University of North Carolina Coding Boot Camp. Tenacious problem-solver who is naturally drawn to database management and server development. Strengths in critical thinking, diagnostics, learning new concepts, and leadership."
-    const aboutBio1 =  "For over a decade I have served as an ASE Master Mechanic, earning all ASE certificates in automotive repair and commercial vehicle repair. During that period I have completed the UNC Coding Bootcamp and two years towards a Computer Science Degree.";
+    const aboutBio1 = "For over a decade I have served as an ASE Master Mechanic, earning all ASE certificates in automotive repair and commercial vehicle repair. During that period I have completed the UNC Coding Bootcamp and two years towards a Computer Science Degree.";
     const aboutBio2 = "My ambition is to find myself in the convergence of these two industries; both automotive mechanics and computer programming."
 
 
@@ -19,7 +19,7 @@ class About extends Component {
 
     return (
       <section id="about">
-        
+
         <Fade duration={500}>
           <div className="row">
             <div className="three columns">
@@ -32,7 +32,7 @@ class About extends Component {
             <div className="nine columns main-col">
               <h2>About Mikey Hauser</h2>
               <p>{aboutBio3}</p>
-             <h2>                Core Philosophies:
+              <h2>                Core Philosophies:
 </h2>
               <ol>
                 <li>Be a perpetual learner of new things</li>
@@ -42,39 +42,36 @@ class About extends Component {
                 <li>By focusing on honest communication, people can accomplish great things together</li>
                 <li>Positive attitudes resonate and amplify through a project</li>
                 <li>Practice makes perfect: time and commitment bring the impossible goals within reach</li>
-              
+
 
               </ol>
+               <section id="contactinfo">
               <div className="row">
                 <div className="columns contact-details">
-                  <h2>Contact Details</h2>
-                  <p className="address">
-                    <span>{aboutName}</span>
-                    <br />
-                    <span>
+                 
+                    <h2 >Contact Details</h2>
+                    <p className="address">
+                      <span>{aboutName}</span>
                       <br />
-                      {aboutCity}, {aboutState}
-                    </span>
-                    <br />
-                    <span>{phone}</span>
-                    <br />
-                    <span>{email}</span>
-                  </p>
-                </div>
-                <div className="columns download">
-                  <p>
-                    {/* <a href={resumeDownload} className="button">
-                      <i className="fa fa-download"></i>Download Resume
-                    </a> */}
-                  </p>
+                      <span>
+                        <br />
+                        {aboutCity}, {aboutState}
+                      </span>
+                      <br />
+                      <span>{phone}</span>
+                      <br />
+                      <span>{email}</span>
+                    </p>
+                 
                 </div>
               </div>
+              </section>
             </div>
           </div>
-          
+
         </Fade>
-        
-        
+
+
       </section>
     );
   }
