@@ -5,12 +5,14 @@ class Footer extends Component {
   render() {
 
     return (
-      <footer>
+      <section id="footer">
+     <footer >
         <div className="row">
           <Fade bottom>
             <div className="twelve columns">
               <ul className="mikeySocial">
-                <li key="linkedin">
+                <li style={{paddingRight: "200px"}}
+                key="linkedin">
                   <a href="https://www.linkedin.com/in/mikey-hauser-3109099/">
                     <i className="fa fa-linkedin"></i>
                   </a>
@@ -32,6 +34,8 @@ class Footer extends Component {
           </div>
         </div>
       </footer>
+      </section>
+
     );
   }
 }

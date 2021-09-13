@@ -11,10 +11,7 @@ class About extends Component {
     const aboutBio2 = "My ambition is to find myself in the convergence of these two industries; both automotive mechanics and computer programming."
 
 
-    const aboutCity = "Chapel Hill";
-    const aboutState = "North Carolina";
-    const phone = "919-259-2629";
-    const email = "mikeyhauser@gmail.com";
+  
     // const resumeDownload = this.props.data.resumedownload;
 
     return (
@@ -45,27 +42,7 @@ class About extends Component {
 
 
               </ol>
-               <section id="contactinfo">
-              <div className="row">
-                <div className="columns contact-details">
-                 
-                    <h2 >Contact Details</h2>
-                    <p className="address">
-                      <span>{aboutName}</span>
-                      <br />
-                      <span>
-                        <br />
-                        {aboutCity}, {aboutState}
-                      </span>
-                      <br />
-                      <span>{phone}</span>
-                      <br />
-                      <span>{email}</span>
-                    </p>
-                 
-                </div>
-              </div>
-              </section>
+            
             </div>
           </div>
 

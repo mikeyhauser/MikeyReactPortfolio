@@ -7,7 +7,6 @@
    perspective: 1000px; 
  }
  
- /* This container is needed to position the front and back side */
  .flip-card-inner {
     
    position: relative;
@@ -206,7 +205,7 @@ header .scrolldown a:hover { color: #0762f9; }
 /* primary navigation
 --------------------------------------------------------------------- */
 #nav-wrap ul, #nav-wrap li, #nav-wrap a {
-   z-index: 1;
+   /* z-index: 1; */
 
 	 margin: 0;
 	 padding: 0;
@@ -222,10 +221,11 @@ header .scrolldown a:hover { color: #0762f9; }
    text-transform: uppercase;
    letter-spacing: 2.5px;
    margin: 0 auto;
-   z-index: 999;
+   /* z-index: 999; */
    position: fixed;
    left: 0;
    top: 0;
+   background-color: rgb(33, 33, 33, .4);
 }
 
 
@@ -324,6 +324,43 @@ ul#nav li.current a { color: #fe6928; }
    font-size: 20px;
 }
 
+#contactinfo {
+   
+
+background-color: rgb(36, 35, 35);
+   padding-top: 100px;
+   padding-bottom: 200px;
+   overflow: hidden;
+   float: none !important;
+}
+#contactinfo h2 {
+   font: 22px, 'opensans-bold', sans-serif;
+   width: 100%;
+   text-transform: uppercase;
+   letter-spacing: 2.5px;
+
+   font: 22px/30px 'opensans-bold', sans-serif;
+   color: #fff;
+   margin-bottom: 12px;
+}
+#contactinfo a, footer a:visited { color: rgba(177, 108, 131, 0.8); 
+}
+#contactinfo a:hover, footer a:focus { color: #fff; }
+
+#contactinfo .mikeySocial {
+   margin: 18px 0 30px 0;
+   padding: 0;
+   font-size: 100px;
+}
+#contactinfo .mikeySocial li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    margin-left: 42px;
+    color: #F06000;
+}
+
+#contactinfo .mikeySocial li:first-child { margin-left: 0; }
 
 /* ------------------------------------------------------------------ */
 /* d. Resume Section
@@ -389,9 +426,46 @@ ul#nav li.current a { color: #fe6928; }
    margin-top: 6px;
 }
 
+
+
 /*----------------------------------------------*/
-/*	Skill Bars
+/*	Skills Component
 /*----------------------------------------------*/
+
+#skills {
+   background-color: #e4e4e4;
+   padding-top: 90px;
+   padding-bottom: 72px;
+   overflow: hidden;
+}
+
+#skills p{
+  color: #0D0D0D;
+}
+
+
+#skills h1 {
+   font: 18px/24px 'opensans-bold', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+}
+#skills h1 span {
+   border-bottom: 3px solid #0762f9;
+   padding-bottom: 6px;
+}
+#skills h3 {
+   font: 25px/30px 'opensans-bold', sans-serif;
+}
+
+#skills .header-col { padding-top: 9px; }
+#skills .main-col { padding-right: 10%; }
+
+#skills .info {
+   font: 16px/24px 'librebaskerville-italic', serif;
+   color: #6E7881;
+   margin-bottom: 18px;
+   margin-top: 9px;
+}
 
 .bars {
 	width: 95%;
@@ -449,7 +523,12 @@ text-align: left !important;
    padding-top: 0px;
    padding-bottom: 0px;
    }
-
+#portfolio h2{
+   font: 22px 'opensans-bold', sans-serif;
+   width: 100%;
+   text-transform: uppercase;
+   letter-spacing: 2.5px;
+}
 
 #portfolio h1 {
    font: 15px/24px 'opensans-semibold', sans-serif;
@@ -633,20 +712,21 @@ call-to-action .button {
 
 footer {
    padding-top: 48px;
-   margin-bottom: 48px;
+   margin-bottom: 200px;
    color: #303030;
    font-size: 14px;
    text-align: center;
    position: relative;
 }
 
-footer a, footer a:visited { color: rgba(177, 108, 131, 0.8); }
+footer a, footer a:visited { color: rgba(177, 108, 131, 0.8); 
+}
 footer a:hover, footer a:focus { color: #fff; }
 
 footer .mikeySocial {
    margin: 18px 0 30px 0;
    padding: 0;
-   font-size: 30px;
+   font-size: 100px;
 }
 footer .mikeySocial li {
     display: inline-block;

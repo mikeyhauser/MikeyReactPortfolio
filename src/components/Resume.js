@@ -3,11 +3,7 @@ import Fade from "react-reveal";
 
 class Resume extends Component {
   getRandomColor() {
-    // let letters = "0123456789ABCDEF";
     let color = "#681f30";
-    // for (let i = 0; i < 6; i++) {
-    //   color += letters[Math.floor(Math.random() * 16)];
-    // }
     return color;
   }
 
@@ -89,23 +85,6 @@ class Resume extends Component {
             <div className="nine columns main-col">{work}</div>
           </div>
         </Fade>
-
-          <div className="row skill">
-            <div className="three columns header-col">
-              <h1>
-                <span>Skills</span>
-              </h1>
-            </div>
-
-            <div className="nine columns main-col">
-              <p>Here are some of my favorite languages/technologies</p>
-              <p>* The bar graphic represents my confidence and ability to quickly find solutions to new problems on that platform</p>
-
-              <div className="bars">
-                <ul className="skills">{skills}</ul>
-              </div>
-            </div>
-          </div>
       </section>
     );
   }
