@@ -9,12 +9,6 @@ class Contact extends Component {
     const phone = "919-259-2629";
     const email = "mikeyhauser@gmail.com";
 
-    // const name = "Mikey Hauser";
-    // const street = "Orange Grove Road";
-    // const city = "Efland";
-    // const state = "North Carolina";
-    // // const phone = "919-259-2628";
-    // // const message = this.props.data.contactmessage;
 
     return (
       <section id="contactinfo">
@@ -39,7 +33,7 @@ class Contact extends Component {
               <ul className="mikeySocial">
                 <li style={{paddingRight: "100px"}}
                 key="linkedin">
-                  <a href="https://www.linkedin.com/in/mikey-hauser-3109099/">
+                  <a href= "https://www.linkedin.com/in/mikey-hauser-3109099/">
                     <i className="fa fa-linkedin"></i>
                   </a>
                 </li>
