@@ -37,7 +37,7 @@ class Contact extends Component {
             <Fade bottom>
             <div className="twelve columns">
               <ul className="mikeySocial">
-                <li style={{paddingRight: "200px"}}
+                <li style={{paddingRight: "100px"}}
                 key="linkedin">
                   <a href="https://www.linkedin.com/in/mikey-hauser-3109099/">
                     <i className="fa fa-linkedin"></i>
