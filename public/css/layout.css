@@ -327,30 +327,30 @@ ul#nav li.current a { color: #fe6928; }
 #contactinfo {
    
 
-background-color: rgb(36, 35, 35);
-   padding-top: 100px;
-   padding-bottom: 200px;
-   overflow: hidden;
+background-color: rgb(36, 35, 35) !important;
+   padding-top: 100px !important;
+   padding-bottom: 200px !important;
+   overflow: hidden !important;
    float: none !important;
 }
 #contactinfo h2 {
-   font: 22px, 'opensans-bold', sans-serif;
-   width: 100%;
-   text-transform: uppercase;
-   letter-spacing: 2.5px;
+   font: 22px, 'opensans-bold', sans-serif !important;
+   width: 100% !important;
+   text-transform: uppercase !important;
+   letter-spacing: 2.5px !important;
 
-   font: 22px/30px 'opensans-bold', sans-serif;
-   color: #fff;
-   margin-bottom: 12px;
+   font: 22px/30px 'opensans-bold', sans-serif !important;
+   color: #fff !important;
+   margin-bottom: 12px !important;
 }
 #contactinfo a, footer a:visited { color: rgba(177, 108, 131, 0.8); 
 }
 #contactinfo a:hover, footer a:focus { color: #fff; }
 
 #contactinfo .mikeySocial {
-   margin: 18px 0 30px 0;
+   margin: 18px 0 30px 0 !important;
    padding: 0;
-   font-size: 100px;
+   font-size: 100px !important;
 }
 #contactinfo .mikeySocial li {
     display: inline-block;
@@ -433,14 +433,14 @@ background-color: rgb(36, 35, 35);
 /*----------------------------------------------*/
 
 #skills {
-   background-color: #e4e4e4;
-   padding-top: 90px;
-   padding-bottom: 72px;
-   overflow: hidden;
+   background-color: #e4e4e4 !important;
+   padding-top: 90px !important;
+   padding-bottom: 72px !important;
+   overflow: hidden !important;
 }
 
 #skills p{
-  color: #0D0D0D;
+  color: #0D0D0D !important;
 }
 
 
