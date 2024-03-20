@@ -134,20 +134,20 @@ header .banner {
 header .banner-text { width: 100%; }
 header .banner-text h1 {
    font: 90px/1.1em 'opensans-bold', sans-serif;
-   color: rgb(224, 223, 223);
+   color: rgb(243, 232, 232);
    border-radius: 30px;
    letter-spacing: -2px;
    margin: 0 auto 18px auto;
    -webkit-text-stroke-width: 1.5px;
-   -webkit-text-stroke-color: rgb(114, 114, 114);
+   -webkit-text-stroke-color: rgb(184, 182, 182);
 }
 header .banner-text h3 {
   
 
    /* font: 20px/1.1em 'opensans-bold', sans-serif; */
 
-   font: 27px/1.5em 'librebaskerville-heavy', serif;
-   color: rgb(233, 233, 233);
+   font: 27px/2em 'librebaskerville-heavy', sans-serif;
+   color: rgb(212, 206, 255);
    background-color: rgba(177, 108, 131, 0.8);
    border-radius: 50px;
    margin: 0 auto;
@@ -205,8 +205,6 @@ header .scrolldown a:hover { color: #0762f9; }
 /* primary navigation
 --------------------------------------------------------------------- */
 #nav-wrap ul, #nav-wrap li, #nav-wrap a {
-   /* z-index: 1; */
-
 	 margin: 0;
 	 padding: 0;
 	 border: none;
@@ -215,21 +213,16 @@ header .scrolldown a:hover { color: #0762f9; }
 
 /* nav-wrap */
 #nav-wrap {
-   
-   font: 12px 'opensans-bold', sans-serif;
+   font: 10px 'opensans-bold', sans-serif;
    width: 100%;
    text-transform: uppercase;
    letter-spacing: 2.5px;
    margin: 0 auto;
-   /* z-index: 999; */
    position: fixed;
    left: 0;
    top: 0;
-   background-color: rgb(33, 33, 33, .4);
+   background-color: rgba(75, 74, 74, 0.4);
 }
-
-
-
 
 .opaque { background-color: #333; }
 
@@ -237,14 +230,13 @@ header .scrolldown a:hover { color: #0762f9; }
 #nav-wrap > a.mobile-btn { display: none; }
 
 ul#nav {
-   min-height: 48px;
+   height: 48px;
    width: auto;
-
-   /* center align the menu */
+   height: 48px;
+/* center align the menu */
    text-align: center;
 }
 ul#nav li {
-   /* position: relative; */
    list-style: none;
    height: 48px;
    display: inline-block;
@@ -252,36 +244,36 @@ ul#nav li {
 
 /* Links */
 ul#nav li a {
-
-/* 8px padding top + 8px padding bottom + 32px line-height = 48px */
-
    display: inline-block;
-   padding: 8px 13px;
+   padding: 4px 23px;
    line-height: 32px;
 	text-decoration: none;
    text-align: left;
    color: #fff;
-
-	-webkit-transition: color .2s ease-in-out;
-	-moz-transition: color .2s ease-in-out;
-	-o-transition: color .2s ease-in-out;
-	-ms-transition: color .2s ease-in-out;
-	transition: color .2s ease-in-out;
+   -webkit-transition: all 400ms ease-in-out;
+	-moz-transition: all 400ms ease-in-out;
+	-o-transition: all 400ms ease-in-out;
+	-ms-transition: all 400ms ease-in-out;
+   transition: all 400ms ease-in-out;
 }
 
 ul#nav li a:active { background-color: transparent !important; }
-ul#nav li.current a { color: #fe6928; }
-
+ul#nav li.current a { 
+   color: #f4eb8d; 
+   font: 15px 'opensans-bold';
+   -webkit-transition: all 400ms ease-in-out;
+	-moz-transition: all 400ms ease-in-out;
+	-o-transition: all 400ms ease-in-out;
+	-ms-transition: all 400ms ease-in-out;
+   transition: all 400ms ease-in-out;
+}
 
 /* ------------------------------------------------------------------ */
 /* c. About Section
 /* ------------------------------------------------------------------ */
 
 #about {
-   
    background-image: "../images/cs_logo.png" !important;
-
-   /* background: #000524; */
    padding-top: 96px;
    padding-bottom: 66px;
    overflow: hidden;
@@ -325,21 +317,18 @@ ul#nav li.current a { color: #fe6928; }
 }
 
 #contactinfo {
-      
-
 background-color: rgb(36, 35, 35) !important;
    padding-top: 100px !important;
    padding-bottom: 200px !important;
    overflow: hidden !important;
    float: none !important;
 }
+
 #contactinfo h2 {
    font: 22px, 'opensans-bold', sans-serif !important;
    width: 100% !important;
    text-transform: uppercase !important;
    letter-spacing: 2.5px !important;
-
-   font: 22px/30px 'opensans-bold', sans-serif !important;
    color: #fff !important;
    margin-bottom: 12px !important;
 }
@@ -569,63 +558,6 @@ text-align: left !important;
    opacity: 0;
 }
 
-/* ------------------------------------------------------------------ */
-/* f. Call To Action Section
-/* ------------------------------------------------------------------ */
-/* 
-#call-to-action {
-   background: #212121;
-   padding-top: 66px;
-   padding-bottom: 48px;
-}
-#call-to-action h1 {
-   font: 18px/24px 'opensans-bold', sans-serif;
-   text-transform: uppercase;
-   letter-spacing: 3px;
-   color: #fff;
-}
-#call-to-action h1 span { display: none; }
-#call-to-action .header-col h1:before {
-   font-family: 'FontAwesome';
-   content: "\f0ac";
-	padding-right: 10px;
-	font-size: 72px;
-   line-height: 72px;
-   text-align: left;
-   float: left;
-   color: #fff;
-}
-#call-to-action .action {
-   margin-top: 12px;
-}
-#call-to-action h2 {
-   font: 28px/36px 'opensans-bold', sans-serif;
-   color: #EBEEEE;
-   margin-bottom: 6px;
-}
-#call-to-action h2 a {
-   color: inherit;
-}
-#call-to-action p {
-   color: #636363;
-   font-size: 17px;
-} */
-/*#
-call-to-action .button {
-	color:#fff;
-   background: #0D0D0D;
-}
-*/
-/* #call-to-action .button:hover,
-#call-to-action .button:active {
-   background: #FFFFFF;
-   color: #0D0D0D;
-}
-#call-to-action p span {
-	font-family: 'opensans-semibold', sans-serif;
-	color: #D8D8D8;
-} */
-
 /* Flex Slider
 /* ------------------------------------------------------------------ */
 
@@ -658,9 +590,6 @@ call-to-action .button {
    clear: both;
 }
 
-/* No JavaScript Fallback */
-/* If you are not using another script, such as Modernizr, make sure you
- * include js that eliminates this class on page load */
 .no-js .slides > li:first-child { display: block; }
 
 /* Slider Styles */
@@ -680,7 +609,7 @@ call-to-action .button {
     margin: 0 6px;
     display: inline-block;
     zoom: 1;
-    *display: inline;
+    display: inline;
 }
 .flex-control-paging li a {
     width: 12px;

@@ -4,7 +4,7 @@
       "school":"University Of North Carolina",
       "degree":"Full Stack Coding Bootcamp: Certificate",
       "graduated":"Graduated: JUL 2021",
-      "description":"Learned Full Stack Web Development by studying, writing, and troubleshooting code. Completed 3 team projects and learned how to effectively coordinate my coding remotely with others through the use of Git Repo's. Every week of the boot camp required me to produce a new application that utilized industry technologies. As a student, I learned how to code both the front-end and back-end of web applications."
+      "description":"Learned Full Stack Web Development by studying, writing, and troubleshooting code. Completed 3 team projects and learned how to effectively coordinate my coding remotely with others through the use of Git Repo's."
     },
     {
       "school":"Durham Tech Community College",
@@ -15,29 +15,28 @@
     {
       "school":"Academy of Information Technologies",
       "degree":"Certificate of Completion",
-
       "graduated": "High School Program",
       "description":"Learned the basics of web design, networking, C++ and Javascript. The academy placed me at an internship with KONTEK Systems where I installed network systems for Universities, Hospitals, and Libraries."
     }
   ],
   "work":[
     {
+      "company":"Meltwater",
+      "title":"Software Engineer",
+      "years":"OCT 2021 - PRESENT",
+      "description": "Skillfully engineered and developed over 500 data-driven graphics, a customizable dashboard platform, and a robust backend within a collaborative, autonomous team, facilitating insightful engagement metrics across multiple media platforms."
+    },
+    {
       "company":"Kamehameha Schools Transportation Department",
       "title":"Fleet Mechanic",
       "years":"JAN 2013 - JUL 2019",
-      "description":"Maintained a fleet of 30 buses and 150 automobiles. Repairs were done in the field (where breakdowns occured) in order to make sure the students safely arrived to their destinations. This environment required consistent critical thinking under pressure. I had to make timely repair decisions, order my own parts, and coordinate when to bring buses out of service to perform repairs."
-    },
-    {
-      "company":"Mellott Contractors",
-      "title":"Fleet Mechanic",
-      "years":"AUG 2019 - Present",
-      "description":"I manage a fleet of commercial trucks and heavy equipment (excavators, dozers, and things of that sort.) I Coordinate closely with another mechanic to complete the maximum amount of repairs on the fleet. Communication and teamwork has been a great success in this position."
+      "description":"Maintained a fleet of 30 buses and 150 automobiles. Repairs were done in the field (where breakdowns occured) in order to make sure the students safely arrived to their destinations."
     },
     {
       "company":"Americorps: Habitat for Humanity and Residential Services Inc",
       "title":"Community Organizer and Social Worker",
       "years":"2007 - 2009",
-      "description":"Managed a variety of philanthropic projects for non-profit businesses including Habitat for Humanity, Public Allies of North Carolina, and Residential Services Inc. Practiced community organizing, team leadership, and asset based community development. At Habitat for Humanity, our goal was to provide low income housing. At RSI, our goal was to provide living options and related supports to people with intellectual and developmental disabilities."
+      "description":"Managed a variety of philanthropic projects for non-profit businesses including Habitat for Humanity, Public Allies of North Carolina, and Residential Services Inc. Practiced community organizing, team leadership, and asset based community development."
     }
   ],
   "skills":[
@@ -47,10 +46,18 @@
     },
     {
       "name":"Node.js",
-      "level":"87%"
+      "level":"95%"
     },
     {
-      "name":"MongoDB",
+      "name":"Amazon Web Services",
+      "level":"80%"
+    },
+    {
+      "name":"GitHub Management",
+      "level":"90%"
+    },
+    {
+      "name":"Amazon Web Services",
       "level":"80%"
     },
     {
@@ -58,7 +65,7 @@
       "level":"85%"
     },
     {
-      "name":"MySQL",
+      "name":"SQL",
       "level":"70%"
     },
     {
@@ -66,27 +73,33 @@
       "level":"85%"
     },
     {
-      "name":"MERN Stack",
-      "level":"55%"
-    },
-    {
       "name":"React",
       "level":"50%"
     },
-    
+    {
+      "name":"Datadog",
+      "level":"40%"
+    },
+    {
+      "name":"Jest and Jasmine Testing",
+      "level":"70%"
+    },
+    {
+      "name":"Bash Scripting",
+      "level":"63%"
+    },
     {
       "name":"Heroku/ Atlas/ Cloud Tech",
       "level":"60%"
     },
     {
-      "name":"GitHub Management",
-      "level":"60%"
+      "name":"Python",
+      "level":"25%"
     },
     {
-      "name":"HTML",
-      "level":"65%"
+      "name":"Open AI Backend",
+      "level":"45%"
     }
-
   ]
 },
   

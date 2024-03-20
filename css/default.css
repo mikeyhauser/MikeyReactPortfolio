@@ -102,7 +102,7 @@ blockquote cite a:visited { color: #8B9798; border: none }
 	 </aside>
 /*
 /* --------------------------------------------------------------------- */
-.pull-quote {
+/* .pull-quote {
    position: relative;
 	padding: 18px 30px 18px 0px;
 }
@@ -129,7 +129,7 @@ blockquote cite a:visited { color: #8B9798; border: none }
 }
 .pull-quote blockquote:before {
    content: none;
-}
+} */
 
 /* Abbreviations */
 abbr {
@@ -534,7 +534,3 @@ properly.
 	margin-right: auto !important;
 	text-align: center !important;
 }
-
-
-
-
