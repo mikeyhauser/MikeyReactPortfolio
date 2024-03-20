@@ -2,15 +2,13 @@ import React, { Component } from "react";
 import ReactGA from "react-ga";
 import $ from "jquery";
 import "./App.css";
-import Header from "./Components/Header";
-import Footer from "./Components/Footer";
-import About from "./Components/About";
-import Resume from "./Components/Resume";
-import Portfolio from "./Components/Portfolio";
-import Skills from "./Components/Skills";
-import Contact from "./Components/Contact";
-
-
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import About from "./components/About";
+import Resume from "./components/Resume";
+import Portfolio from "./components/Portfolio";
+import Skills from "./components/Skills";
+import Contact from "./components/Contact";
 
 class App extends Component {
   constructor(props) {
@@ -29,10 +27,10 @@ class App extends Component {
       url: "./projectsData.json",
       dataType: "json",
       cache: false,
-      success: function(data) {
+      success: function (data) {
         this.setState({ projectsData: data });
       }.bind(this),
-      error: function(xhr, status, err) {
+      error: function (err) {
         console.log(err);
         alert(err);
       }
@@ -45,19 +43,15 @@ class App extends Component {
 
   render() {
     return (
-      
+
       <div className="App">
         <Header data={this.state.projectsData.main} />
         <About data={this.state.projectsData.main} />
         <Contact data={this.state.projectsData.main} />
-
-        <Portfolio data={this.state.projectsData.portfolio} />
-
         <Resume data={this.state.projectsData.resume} />
+        <Portfolio data={this.state.projectsData.portfolio} />
         <Skills data={this.state.projectsData.resume} />
-
         <Footer data={this.state.projectsData.main} />
-        
       </div>
     );
   }

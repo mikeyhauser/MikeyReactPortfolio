@@ -1,20 +1,20 @@
 import React, { Component } from "react";
 import Fade from "react-reveal";
 
+const aboutName = "Mikey Hauser";
+const aboutCity = "Chapel Hill";
+const aboutState = "North Carolina";
+const phone = "919-259-2629";
+const email = "mikeyhauser@gmail.com";
+
 class Contact extends Component {
+
   render() {
-    const aboutName = "Mikey Hauser";
-    const aboutCity = "Chapel Hill";
-    const aboutState = "North Carolina";
-    const phone = "919-259-2629";
-    const email = "mikeyhauser@gmail.com";
-
-
+  
     return (
       <section id="contactinfo">
       <div style={{textAlign: "center"}}  className="row">
         <div className="contact-details">
-         
             <h2 >Contact Details</h2>
             <p className="address">
               <span>{aboutName}</span>
@@ -46,7 +46,6 @@ class Contact extends Component {
               </ul>
             </div>
           </Fade>
-         
         </div>
       </div>
       </section>

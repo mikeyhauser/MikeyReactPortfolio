@@ -35,9 +35,6 @@ class Skills extends Component {
             </div>
 
             <div className="nine columns main-col">
-              <p>Here are some of my favorite languages/technologies</p>
-              <p>* The bar graphic represents my confidence and ability to quickly find solutions to new problems on that platform</p>
-
               <div className="bars">
                 <ul className="skills">{skills}</ul>
               </div>
