@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Zmage from "react-zmage";
 
 let id = 0;
+
 class Portfolio extends Component {
   render() {
     if (!this.props.data) return null;
@@ -13,7 +14,7 @@ class Portfolio extends Component {
           <h1>Stagger Effect On The Cards</h1>
           <div key={id++} class="columns flip-card">
             <div class="flip-card-inner">
-              <div style={{ backgroundImage: '(${projectImage})' }}
+              <div style={{ backgroundImage: `(${projectImage})` }}
                 class="flip-card-front">
                 <h4 style={{ backgroundColor: "black" }} >{projects.title}</h4>
                 <Zmage style={{ width: "170px", height: "150px" }} alt={projects.title} src={projectImage} />
@@ -44,8 +45,7 @@ class Portfolio extends Component {
         <div className="row">
           <div className="twelve columns collapsed">
 
-            <h2 style={{ color: "white", textAlign: "center" }}>My Projects From 2021:</h2>
-            {/* <p style={{ color: "gray", textAlign: "center" }}>(Bus Tracker uses a free cloud database and will take 10 seconds to load)</p> */}
+            <h2 style={{ color: "white", textAlign: "center" }}>My Personal Projects:</h2>
 
             <div
               id="portfolio-wrapper"
